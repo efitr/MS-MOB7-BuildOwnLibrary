@@ -14,15 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //Makes the view work
         //createBelowBoxes()
-        //createBottomBoxesAnimatedBounce()
-        createBottomBoxesAnimatedBounceWithLabels()
+        createBottomBoxesAnimatedBounce()
+        //createBottomBoxesAnimatedBounceWithLabels()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    //
+        //
     var colors = [UIColor.red, UIColor.purple, UIColor.cyan, UIColor.brown, UIColor.darkGray]
     //
     func createBelowBoxes() {
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
                 })
         }
     }
-    
+
     func createBottomBoxesAnimatedBounceWithLabels() {
         for i in 0...4 {
             let view = UIView(frame: CGRect(x: CGFloat(i) * self.view.frame.width / 5,
@@ -103,7 +103,8 @@ class ViewController: UIViewController {
             }, completion: {
                 (value: Bool) in
             })
-    }
+        }
+        
         let label1 = UILabel(frame: CGRect(x: self.view.bounds.minX,
                                            y: self.view.frame.height - self.view.frame.width / 5 - 30,
                                            width: self.view.frame.width,

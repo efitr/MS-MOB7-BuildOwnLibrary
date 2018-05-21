@@ -1,12 +1,11 @@
 //
-//  BezierCurve.swift
-//  FrameandBounds
+//  GradientViewController.swift
+//  BezierPath
 //
-//  Created by Egon Fiedler on 5/3/18.
+//  Created by Egon Fiedler on 5/21/18.
 //  Copyright © 2018 App Solutions. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class BezierCurve: UIView {
@@ -27,7 +26,7 @@ class BezierCurve: UIView {
         gradientLayer.name = "GradientLayer"
         gradientLayer.colors = colorSet()
         gradientLayer.frame = bounds
-    
+        
         return gradientLayer
     }
     
@@ -38,5 +37,5 @@ class BezierCurve: UIView {
         let colorSet : [CGColor] = [colorOne.cgColor, colorTwo.cgColor]
         return colorSet
     }
-
+    
 }
